@@ -1,0 +1,166 @@
+.header {
+    background-color: #970303;
+    color: #ffffff;
+    height: 15vh;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    .navegacion {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding: 1.5rem 0;
+
+        .anclaLogo {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 2.8rem;
+        }
+
+        .listanav {
+            list-style: none;
+            display: flex;
+            align-items: center;
+
+            .navitem {
+                margin-right: 20px;
+
+                .linknav {
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-weight: 700;
+                    font-size: 1.3rem;
+                    padding: 0.5rem 1rem;
+                    font-optical-sizing: auto;
+                    font-style: normal;
+                    font-family:"Noto Sans KR";
+                    /* Agregar efecto de botón presionado */
+                    transition: transform 0.3s, box-shadow 0.3s;
+                    &:hover{
+                        box-shadow: 0px 10px 30px -5px rgba(255, 255, 255, 0.3);
+                        transform: scale(0.95);
+                        border-radius: 5px;
+                    }
+
+                }
+
+                /* boton iniciar sesion */
+                .linknav.iniciarSesion {
+                    background-color: #3a0909;
+                    color: white;
+                    border-radius: 5px;
+
+                    transition: transform 0.3s, box-shadow 0.3s;
+
+                    &:hover {
+                        background-color: #9f3647;
+                        transform: scale(0.95);
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.sub{
+    height: 10vh;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-top: 50px;
+    text-align: center;
+    font-family: "Noto Sans KR";
+    font-style: italic;
+}
+
+.footer{
+    height: 9vh;
+    background-color:#ac2e2e;
+    color: white;
+    position: relative;
+    bottom: 0;
+    .navegacionfooter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding: 1.5rem 0;
+        .listafooter{
+            display: flex;
+            list-style: none;
+
+            .footeritem{
+                margin-right: 20px;
+                
+                .linkfooter{
+                    color: white;
+                    font-family:"Noto Sans KR";
+                    font-optical-sizing: auto;
+                    font-weight: 100;
+                    font-style: normal;
+                    text-decoration: none;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }       
+}
+
+body{
+    background: rgb(22, 22, 22);
+    color: white;
+}
+
+.contenedor{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    justify-items: center;
+    .imagenes_juguetes{
+        display: flex;
+        & img{
+            width: 10vw;
+            height: 20rem;
+            border-top-left-radius: 2rem;
+            border-bottom-left-radius: 2rem;
+         }
+    
+    }
+    .nombre_juguete{
+        position: relative;
+        display: flex;
+        color: white;
+        flex-direction: column;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-top: 10vh;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-family: "Noto Sans KR";
+    }
+
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+ 
+  }
+
+input[type="text"], input[type="email"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #100303;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
